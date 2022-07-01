@@ -4,24 +4,8 @@
   }
 }
 
-@mixin distrubte-grid-evenly($px) {
-  grid-template-columns: repeat(auto-fit, minmax($px, 1fr));
-  grid-gap: 0.5rem;
-}
-
 @mixin circle($width, $height) {
   width: $width;
   height: $height;
   border-radius: 50%;
-}
-
-@mixin full-rotate {
-  @keyframes full-rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 }

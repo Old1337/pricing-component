@@ -335,7 +335,7 @@ a {
 
 .header::before {
   position: absolute;
-  content: url(../../images/pattern-circles.svg);
+  content: url(../images/pattern-circles.svg);
   left: 50%;
   top: -40px;
   -webkit-transform: translateX(-50%);
@@ -526,7 +526,7 @@ a {
 }
 
 .pricing-component_feature::before {
-  content: url(../../images/icon-check.svg);
+  content: url(../images/icon-check.svg);
   margin-right: 1rem;
 }
 
