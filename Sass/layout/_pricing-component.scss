@@ -32,11 +32,10 @@
     background: linear-gradient(
       to right,
       #a5f3eb 0%,
-      #a5f3eb 60%,
-      #eaeefb 60%,
+      #a5f3eb 50%,
+      #eaeefb 50%,
       #eaeefb 100%
     );
-
     &::-webkit-slider-thumb {
       -webkit-appearance: none; /* Override default look */
       appearance: none;

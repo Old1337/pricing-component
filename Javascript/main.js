@@ -8,9 +8,12 @@ const toggleBtn = document.querySelector('input[type="checkbox"]');
 
 rangeBar.addEventListener("input", () => {
   priceEl.forEach((el) => (el.textContent = `$${rangeBar.value}`));
-  if (rangeBar.dataset.yearly === "false") {
+
+  if (rangeBar.dataset.yearly === "true") {
     priceEl.forEach((el) => (el.textContent = `$${rangeBar.value * 2}`));
   }
+
+  console.log(rangeBar.min);
   rangeBar.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${
     (rangeBar.value / 32) * 100
   }%, hsl(224, 65%, 95%) ${
@@ -19,11 +22,11 @@ rangeBar.addEventListener("input", () => {
 });
 
 toggleBtn.addEventListener("click", () => {
-  if (rangeBar.dataset.yearly === "true") {
+  if (rangeBar.dataset.yearly === "false") {
     priceEl.forEach((el) => (el.textContent = `$${rangeBar.value * 2}`));
-    rangeBar.dataset.yearly = "false";
-  } else {
     rangeBar.dataset.yearly = "true";
+  } else {
+    rangeBar.dataset.yearly = "false";
 
     priceEl.forEach((el) => (el.textContent = `$${rangeBar.value}`));
   }
