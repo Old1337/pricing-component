@@ -1,0 +1,51 @@
+@include respond-to("small") {
+  body {
+    background-size: contain;
+  }
+  .header_title {
+    font-size: 2rem;
+  }
+  .header_p {
+    width: 100%;
+  }
+  .pricing-component {
+    width: 650px;
+    padding: 3rem;
+
+    &_package {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    & .desktop {
+      display: flex;
+      margin: 0;
+    }
+
+    & .mobile {
+      display: none;
+    }
+
+    &_range-bar {
+      margin-bottom: 2rem;
+    }
+
+    & .subscription-discount_text {
+      display: inline-block;
+    }
+
+    &_feature {
+      display: flex;
+    }
+    &_info {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_button {
+      margin: 0;
+    }
+  }
+}

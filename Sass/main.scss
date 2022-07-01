@@ -1,0 +1,15 @@
+/* ======= Import base files ======= */
+
+@import "base/variables";
+@import "base/mixin";
+
+/* ======= Import core files ======= */
+
+@import "core/reset";
+
+/* ======= Import layout files ======= */
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/pricing-component";
+@import "layout/breakpoints";

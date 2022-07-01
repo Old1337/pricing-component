@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Sass/main.css" />
+    <link rel="stylesheet" href="Sass/all.min.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+
+    <title>pricing component</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header_title">Simple, traffic-based pricing</h1>
+      <p class="header_p">
+        sign-up for our 30-day trial.No credit card required.
+      </p>
+    </header>
+
+    <main class="main container">
+      <div class="pricing-component">
+        <div class="pricing-component_package">
+          <p class="pricing-component_pageviews">100K PAGEVIEWS</p>
+          <p class="pricing-component_price desktop">
+            <span class="price">$16.00</span>
+            <span class="duration">/ month</span>
+          </p>
+        </div>
+        <input
+          type="range"
+          min="4"
+          max="32"
+          step="4"
+          class="pricing-component_range-bar"
+          id="range"
+          data-yearly="true"
+        />
+        <p class="pricing-component_price mobile">
+          <span class="price">$16.00</span>
+          <span class="duration">/ month</span>
+        </p>
+        <div class="pricing-component_subscription-duration flex">
+          <p class="subscription-duration">Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" data-checked="false" />
+            <span class="slider round"></span>
+          </label>
+          <p class="subscription-duration">Yearly Billing</p>
+          <span class="subscription-discount"
+            >-25% <span class="subscription-discount_text">discount</span></span
+          >
+        </div>
+        <div class="pricing-component_info flex">
+          <ul class="pricing-component_features">
+            <li class="pricing-component_feature">Unlimited websites</li>
+            <li class="pricing-component_feature">100% data ownership</li>
+            <li class="pricing-component_feature">Email reports</li>
+          </ul>
+          <button
+            aria-label="click to start your trail"
+            class="pricing-component_button"
+          >
+            Start my trail
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="Javascript/main.js" type="module"></script>
+  </body>
+</html>

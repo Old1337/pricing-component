@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  text-align: center;
+  margin-top: 8rem;
+
+  &::before {
+    position: absolute;
+    content: url(../../images/pattern-circles.svg);
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+  }
+  &_title {
+    font-size: 1.4rem;
+    color: $text-and-cta-bg-color;
+  }
+
+  &_p {
+    max-width: 13rem;
+    margin: 0 auto;
+    color: $text-color;
+  }
+}
